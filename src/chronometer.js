@@ -38,6 +38,8 @@ class Chronometer {
   }
 
   split() {
-    // ... your code goes here
+    const minStr = this.computeTwoDigitNumber(Math.floor(this.currentTime/60)).toString();
+    const secStr = this.computeTwoDigitNumber(this.currentTime%60);
+    return minStr+':'+secStr;
   }
 }
